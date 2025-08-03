@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: "Poppins" , sans-serif;
+            background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/Aq2NJ23MzBH2rx2j/untitled-design-2-YD0rJbvp3nSz7Dvz.png");
+            background-size: cover;          
+            background-position: center;     
+            background-repeat: no-repeat;    
+            background-attachment: fixed;    
+            margin: 0;
+            padding: 0;
+            height: 100vh;                  
+            overflow: hidden;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 5rem;
+        }
+        h1{
+            font-size: 5rem;
+            color: #ed0707;
+        }
+        .about{
+            margin: 0px 20rem;
+            font-size: larger;
+            text-align: center;
+            color: white;
+        }
+    </style>
+    <%- include('./partials/font') %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+</head>
+<body>
+    <%- include('./partials/navbar') %>
+    <div class="content">
+        <div class="container">
+            <h1>She Can Foundation</h1>
+            <div class="about">
+                We are She Can Foundation, a non-governmental organization registered under the Indian Society Act, 1860, dedicated to empowering women and creating a more equitable society. We provide support, resources, and training to women in communities across the globe, working closely with local organizations, governments, and communities to ensure that our programs are effective and sustainable. Through advocacy campaigns and initiatives, we raise awareness of women's issues. We rely on the support of individuals, corporations, and other organizations to achieve our vision. We believe that by working together, we can revolutionize 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

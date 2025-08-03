@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/navbar') %>
+    <meta charset="UTF-8">
+    <title>Leaderboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f0f0f0, #dcdcdc);
+            margin: 0;
+            padding: 0;
+            background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/Aq2NJ23MzBH2rx2j/untitled-design-2-YD0rJbvp3nSz7Dvz.png");
+            background-size: cover;          
+            background-position: center;     
+            background-repeat: no-repeat;    
+            background-attachment: fixed;    
+            margin: 0;
+            padding: 0;
+            height: 100vh;                  
+            overflow: hidden;
+            color: white;
+        }
+        .leaderboard-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: #000;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+            padding: 30px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ccc;
+        }
+        tr:hover {
+            background-color: #292828;
+        }
+    </style>
+</head>
+<body>
+
+<div class="leaderboard-container">
+    <h2>Leaderboard</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Donation Raised</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% leaderboard.forEach((user, index) => { %>
+                <tr>
+                    <td><%= index + 1 %></td>
+                    <td><%= user.name %></td>
+                    <td><%= user.points %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

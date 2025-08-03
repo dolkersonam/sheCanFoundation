@@ -1,0 +1,50 @@
+<style>
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+        background-color: black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+        height: 5rem;
+    }
+
+    .auth-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .link-container a {
+        text-decoration: none;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: large;
+        padding-bottom: 4px;
+    }
+
+    .link-container:hover a {
+        color: rgb(237, 7, 7);
+        border-bottom: 2px solid rgb(237, 7, 7);
+    }
+</style>
+
+<nav>
+    <div class="logo">
+        <a href="/"><img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=296,fit=crop,q=95/Aq2NJ23MzBH2rx2j/she-YlenJon1O7ieeEoa.jpg" alt="Logo"></a>
+    </div>
+
+    <div class="auth-links">
+        <div class="link-container">
+            <a href="/user/signin">Sign In</a>
+        </div>
+        <div class="link-container">
+            <a href="/user/signup">Sign Up</a>
+        </div>
+        <div class="link-container">
+            <a href="/user/leaderboard">Leaderboard</a>
+        </div>
+    </div>
+</nav>
